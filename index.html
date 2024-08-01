@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/-->
+    <link rel="stylesheet" href="css/magnific-popup.css"> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css"> <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/templatemo-upright.css">
+    <!--
+    
+TemplateMo 555 Upright
+
+https://templatemo.com/tm-555-upright
+
+-->
+
+    <style>
+        .item-card ul {
+
+            text-align: right;
+
+        }
+
+        .item-card-english ul {
+            text-align: left;
+        }
+
+        .item-card li {
+
+            padding-right: .6em;
+            /* list-style-position: inside; */
+            direction: rtl;
+        }
+
+        .item-card-english li {
+            direction: ltr;
+        }
+
+        .item-card-english {
+
+            display: none;
+        }
+
+        .saloon-data {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-card-english {
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            max-width: 100%;
+            margin: auto;
+            margin-top: 10px;
+            background: rgb(7, 125, 232);
+            background: linear-gradient(223deg, rgba(7, 125, 232, 1) 0%, rgba(242, 243, 245, 0.15732230392156865) 88%);
+            color: black !important;
+            font-weight: 700 !important;
+
+        }
+
+        .item-card {
+            padding: 20px;
+            text-align: right;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            max-width: 100%;
+            margin: auto;
+            margin-top: 10px;
+            background: rgb(7, 125, 232);
+            background: linear-gradient(223deg, rgba(7, 125, 232, 1) 0%, rgba(242, 243, 245, 0.15732230392156865) 88%);
+            color: black !important;
+            font-weight: 700 !important;
+
+
+        }
+
+        .item-card:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .item-card-english:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #english-left {
+            display: none;
+        }
+
+        #headerfile-English {
+            display: none;
+        }
+
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                direction: rtl;
+                background-color: #d7adad;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+
+            }
+
+            .item-card {
+                padding: 20px;
+                text-align: right;
+                border-radius: 10px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                max-width: 50%;
+                margin: auto;
+                margin-top: 10px;
+                background: linear-gradient(223deg, rgba(7, 125, 232, 1) 0%, rgba(242, 243, 245, 0.15732230392156865) 88%);
+                color: black !important;
+                -webkit-print-color-adjust: exact;
+                font-weight: 700 !important;
+            }
+
+            ul {
+                text-align: right;
+            }
+
+            li {
+                padding-right: .6em;
+                direction: rtl;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar">
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Atlantes</h1>
+                        </div>
+                        <!-- <ul id="tm-main-nav">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link current text-right">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-home nav-icon"></i>
+                                    علاجات للشعر التالف
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" onclick="card2Click()" class="nav-link  text-right">
+                                    <div class="triangle-right"></div>
+
+                                    حنة الشعر الطبيعي
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link text-right">
+                                    <div class="triangle-right"></div>
+
+                                    خدمات الأظافر
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link text-right">
+                                    <div class="triangle-right"></div>
+                                    صبغات الشعر بدون امونيا
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <footer class="mb-3 tm-mt-100">
+                    </footer>
+                </nav>
+            </div>
+
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div>
+                    <section id="home" class="tm-section">
+                        <h2 class="tm-text-primary" id="headerfile">صالون التانتس للسيدات &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button id="button-english" onclick="englishChange()"
+                                class="btn btn-primary">ENGLISH</button><button id="button-english"
+                                onclick="arabicChange()" class="btn btn-primary">العربية</button>
+                        </h2>
+                        <h2 class="tm-text-primary" id="headerfile-English">Atlantes Saloon Ladies
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="button-english" onclick="englishChange()"
+                                class="btn btn-primary">ENGLISH</button><button id="button-english"
+                                onclick="arabicChange()" class="btn btn-primary">العربية</button>
+                        </h2>
+                        <hr class="mb-5">
+                        <div class="saloon-data row">
+                            <div class="col-md-6">
+                                <div class="card item-card" id="card1-arabic" onclick="printInvoice()">
+                                    <div class="tm-text-container ">
+                                        <h2>علاجات للشعر التالف</h2>
+                                        <ul>
+                                            <li>جلسة مجانا +1000 جلسات الفيلر</li>
+                                            <li>جلسات 1250+ جلسة مجانا</li>
+                                            <li>جلسات كافيار 1000+ جلسة مجانا</li>
+                                            <li>جلسات خلطات طبيعية للشعر 350+ جلسة مجانا</li>
+                                            <li> صبار - جرجير - أفوكادو - جوز الهند</li>
+                                            <li>جلسات زيوت طبيعية لتساقط الشعر 430</li>
+                                            <li> زيت الخروع - زيت السمسم - زيت الارغان - زيت الشيا - زيت الحشيش -
+                                                زيت
+                                                الزيتون</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card item-card-english" id="card1-english" onclick="printTwo()">
+                                    <div class="tm-text-container">
+                                        <h2>Treatments for Damaged Hair</h2>
+                                        <ul>
+                                            <li>Free session +1000 filler sessions</li>
+                                            <li>Sessions 1250+ free session</li>
+                                            <li>Caviar sessions 1000+ free session</li>
+                                            <li>Natural hair mixtures sessions 350+ free session</li>
+                                            <li>Cactus - Parsley - Avocado - Coconut</li>
+                                            <li>Natural oils sessions for hair loss 430</li>
+                                            <li>Castor oil - Sesame oil - Argan oil - Shea butter - Hashish oil - Olive
+                                                oil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="card item-card" id="card2-arabic" onclick="printThree()">
+                                    <div class="tm-text-container ">
+                                        <!-- <h2>علاجات للشعر التالف</h2> -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <ul>
+                                                    <li>قصر الغره</li>
+                                                    <li>حنه كف يد</li>
+                                                    <li>حنه كف رجل</li>
+                                                    <li>واكس أو حلوه بدن كامل</li>
+                                                    <li>واكس أو حلوه ربعين كامل</li>
+                                                    <li>واكس أو حلوه ظهر</li>
+                                                    <li>واكس أو حلوه بكيني</li>
+                                                    <li>خيط كامل</li>
+                                                    <li>تشقير وجه</li>
+                                                    <li>فلب وفي</li>
+                                                    <li>سشوار</li>
+                                                    <li>صبغة جذور</li>
+                                                    <li>قص ستايل</li>
+                                                    <li>حنه اليد</li>
+                                                    <li>حمام كريم مع بخار</li>
+                                                    <li>ماسك مبيض للجسم</li>
+                                                    <li>غسيل شعر</li>
+                                                    <li>قص الاطراف</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul>
+                                                    <li>باكج</li>
+                                                    <li>ماكياج</li>
+                                                    <li>لون اظافر يد</li>
+                                                    <li>لون اظافر رجل</li>
+                                                    <li>تركيب اظافر</li>
+                                                    <li>براشين يد</li>
+                                                    <li>براشين رجل</li>
+                                                    <li>واكس أو حلوه نصف يد</li>
+                                                    <li>واكس أو حلوه نصف رجل</li>
+                                                    <li>واكس أو حلوه يد</li>
+                                                    <li>واكس أو حلوه رجل</li>
+                                                    <li>واكس أو حلوه بطن</li>
+                                                    <li>واكس وجه</li>
+                                                    <li>حفه وجه</li>
+                                                    <li>حفه حواجب</li>
+                                                    <li>حقن شنب</li>
+                                                    <li>تشقير حواجب</li>
+                                                    <li>صبغه حواجب</li>
+                                                    <li>ماسك الوجه</li>
+                                                    <li>سكراب الوجه</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card item-card-english" id="card2-english" onclick="printFour()">
+                                    <div class="tm-text-container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <ul>
+                                                    <li>Short bangs</li>
+                                                    <li>Henna for hand</li>
+                                                    <li>Henna for foot</li>
+                                                    <li>Waxing or sugaring full body</li>
+                                                    <li>Waxing or sugaring half body</li>
+                                                    <li>Waxing or sugaring back</li>
+                                                    <li>Waxing or sugaring bikini</li>
+                                                    <li>Full threading</li>
+                                                    <li>Facial bleaching</li>
+                                                    <li>Full lip</li>
+                                                    <li>Blow dry</li>
+                                                    <li>Roots dye</li>
+                                                    <li>Stylish cut</li>
+                                                    <li>Henna for hand</li>
+                                                    <li>Cream bath with steam</li>
+                                                    <li>Whitening body mask</li>
+                                                    <li>Hair wash</li>
+                                                    <li>Trim ends</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul>
+                                                    <li>Package</li>
+                                                    <li>Makeup</li>
+                                                    <li>Hand nail polish</li>
+                                                    <li>Foot nail polish</li>
+                                                    <li>Nail extensions</li>
+                                                    <li>Hand paraffin</li>
+                                                    <li>Foot paraffin</li>
+                                                    <li>Waxing or sugaring half hand</li>
+                                                    <li>Waxing or sugaring half foot</li>
+                                                    <li>Waxing or sugaring hand</li>
+                                                    <li>Waxing or sugaring foot</li>
+                                                    <li>Waxing or sugaring stomach</li>
+                                                    <li>Facial wax</li>
+                                                    <li>Face threading</li>
+                                                    <li>Eyebrow threading</li>
+                                                    <li>Mustache injection</li>
+                                                    <li>Eyebrow bleaching</li>
+                                                    <li>Eyebrow dye</li>
+                                                    <li>Face mask</li>
+                                                    <li>Face scrub</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6" id="arabic-left">
+
+                                <div class="card item-card" id="card3-arabic" onclick="printFive()">
+                                    <div class="tm-text-container ">
+                                        <h2>علاجات للشعر التالف</h2>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="title">خدمات الأظافر</div>
+                                                <div class="item">جيلش 60</div>
+                                                <div class="item">اكريليك 250</div>
+                                                <div class="item">جيل 300</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="title">صبغات الشعر بدون امونيا</div>
+                                                <div class="item">صبغة شعر من 200 الى 300</div>
+                                                <div class="item">صبغة جذور 100</div>
+                                                <div class="item">صبغة هاي لايت 350</div>
+                                                <div class="item">لوليت 450</div>
+                                                <div class="item">بروتين 490</div>
+                                                <div class="item">كولاجين 690</div>
+                                                <div class="item">كرياتين 490</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card item-card-english" id="card3-english" onclick="printSix()">
+                                    <div class="tm-text-container ">
+                                        <h2>Damaged Hair Treatments</h2>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="title">Nail Services</div>
+                                                <div class="item">Gelish 60</div>
+                                                <div class="item">Acrylic 250</div>
+                                                <div class="item">Gel 300</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="title">Ammonia-Free Hair Dyes</div>
+                                                <div class="item">Hair Dye from 200 to 300</div>
+                                                <div class="item">Root Dye 100</div>
+                                                <div class="item">Highlight Dye 350</div>
+                                                <div class="item">Lowlight 450</div>
+                                                <div class="item">Protein 490</div>
+                                                <div class="item">Collagen 690</div>
+                                                <div class="item">Keratin 490</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card item-card" id="card4-arabic" onclick="printSeven()">
+                                    <div class="tm-text-container ">
+                                        <h2>حنه الشعر الطبيعي</h2>
+
+                                        <p>حنه الشعر صالون التانتس بالاعشاب الطبيعيه</p>
+                                        <p>مثل اكليل الجبل والبابونج والمرامريه واعشاب هنديه مثل البراهمي والشيكاكاي
+                                            واملا
+                                            وجيسونتي وبهزغفراج</p>
+                                        <p>الجلسه 99 درهم</p>
+
+
+                                        <h2>جلسات هيدرا فيشل لتنظيف البشره</h2>
+                                        <ul>
+                                            <li>ابتداء من 75 الى 350 على حسب اختيار الزبونه</li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="card item-card-english" id="card4-english" onclick="printEight()">
+                                    <div class="tm-text-container ">
+                                        <h2>Natural Hair Henna</h2>
+
+                                        <p>Hair henna at Tantus Salon with natural herbs</p>
+                                        <p>Such as rosemary, chamomile, sage, and Indian herbs like Brahmi, Shikakai,
+                                            Amla, and Bhargavaj</p>
+                                        <p>Session 99 AED</p>
+
+                                        <h2>HydraFacial Sessions for Skin Cleaning</h2>
+                                        <ul>
+                                            <li>Starting from 75 to 350 depending on the customer's choice</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card item-card" id="card5-arabic" onclick="printNine()">
+                                    <div class="tm-text-container ">
+                                        <h2>اختيار العرض</h2>
+                                        <ul>
+                                            <li>5 خدمة 150</li>
+                                            <li>10 خدمة 200</li>
+                                            <li>15 خدمة 250</li>
+                                            <li>25 خدمة 350</li>
+                                        </ul>
+                                        <h2>خدمات منزلية</h2>
+                                        <ul>
+                                            <li>10 خدمة 280</li>
+                                            <li>15 خدمة 330</li>
+                                            <li>25 خدمة 380</li>
+                                        </ul>
+                                        <p>الخدمات المنزلية بالحجز المسبق ورسوم التوصيل على الزبونة</p>
+                                    </div>
+                                </div>
+                                <div class="card item-card-english" id="card5-english" onclick="printTen()">
+                                    <div class="tm-text-container ">
+                                        <h2>Offer Selection</h2>
+                                        <ul>
+                                            <li>5 services 150</li>
+                                            <li>10 services 200</li>
+                                            <li>15 services 250</li>
+                                            <li>25 services 350</li>
+                                        </ul>
+                                        <h2>Home Services</h2>
+                                        <ul>
+                                            <li>10 services 280</li>
+                                            <li>15 services 330</li>
+                                            <li>25 services 380</li>
+                                        </ul>
+                                        <p>Home services require advance booking and delivery fees are borne by the
+                                            customer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <hr class="tm-hr-short mb-5">
+                </section>
+            </div>
+
+
+
+            <!-- Copyright -->
+            <div class="tm-section-wrap tm-copyright row">
+                <div class="col-12">
+                    <div class="text-right">
+                        Copyright 2024 RedDefend
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .tm-main -->
+    </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+    <script>
+
+        function printInvoice() {
+
+            const printPage = window.open('print1.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printTwo() {
+            const printPage = window.open('print2.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printThree() {
+            const printPage = window.open('print3.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printFour() {
+            const printPage = window.open('print4.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printFive(){
+            const printPage = window.open('print5.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printSix(){
+            const printPage = window.open('print6.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+
+        function printSeven(){
+            const printPage = window.open('print7.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+
+        function printEight(){
+            const printPage = window.open('print8.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+        function printNine(){
+            const printPage = window.open('print9.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+
+        function printTen(){
+            const printPage = window.open('print10.html');
+            printPage.onload = () => {
+                printPage.print();
+            };
+        }
+
+        function card2Click() {
+            console.log("Box shadow working......................")
+            document.getElementById('card2').style.color = "red"
+        }
+
+        function englishChange() {
+            document.getElementById('card1-arabic').style.display = "none";
+            document.getElementById('card1-english').style.display = "block";
+            document.getElementById('card2-arabic').style.display = "none";
+            document.getElementById('card2-english').style.display = "block";
+            document.getElementById('card3-arabic').style.display = "none";
+            document.getElementById('card3-english').style.display = "block";
+            document.getElementById('card4-arabic').style.display = "none";
+            document.getElementById('card4-english').style.display = "block";
+            document.getElementById('card5-arabic').style.display = "none";
+            document.getElementById('card5-english').style.display = "block";
+            document.getElementById('headerfile-English').style.display = "block";
+            document.getElementById('headerfile').style.display = "none";
+
+
+
+
+        }
+
+        function arabicChange() {
+            document.getElementById('card1-arabic').style.display = "block";
+            document.getElementById('card1-english').style.display = "none";
+            document.getElementById('card2-arabic').style.display = "block";
+            document.getElementById('card2-english').style.display = "none";
+            document.getElementById('card3-arabic').style.display = "block";
+            document.getElementById('card3-english').style.display = "none";
+            document.getElementById('card4-arabic').style.display = "block";
+            document.getElementById('card4-english').style.display = "none";
+            document.getElementById('card5-arabic').style.display = "block";
+            document.getElementById('card5-english').style.display = "none";
+            ocument.getElementById('headerfile-English').style.display = "none";
+            document.getElementById('headerfile').style.display = "block";
+
+        }
+
+    </script>
+    <script src="js/jquery-3.4.1.min.js"></script> <!-- https://jquery.com/ -->
+    <script src="js/jquery.singlePageNav.min.js"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="js/parallax/parallax.min.js"></script> <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/imagesloaded.pkgd.min.js"></script> <!-- https://imagesloaded.desandro.com/ -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- https://isotope.metafizzy.co/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="slick/slick.min.js"></script> <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="js/templatemo-script.js"></script>
+
+</body>
+
+</html>

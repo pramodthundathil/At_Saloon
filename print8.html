@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Natural Hair Henna</h2>
+
+        <p>Hair henna at Tantus Salon with natural herbs</p>
+        <p>Such as rosemary, chamomile, sage, and Indian herbs like Brahmi, Shikakai,
+            Amla, and Bhargavaj</p>
+        <p>Session 99 AED</p>
+
+        <h2>HydraFacial Sessions for Skin Cleaning</h2>
+        <ul>
+            <li>Starting from 75 to 350 depending on the customer's choice</li>
+        </ul>
+    </div>
+</body>
+
+</html>

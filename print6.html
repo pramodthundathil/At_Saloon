@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Damaged Hair Treatments</h2>
+        <div class="row">
+            <div class="col">
+                <div class="title">Nail Services</div>
+                <div class="item">Gelish 60</div>
+                <div class="item">Acrylic 250</div>
+                <div class="item">Gel 300</div>
+            </div>
+            <div class="col">
+                <div class="title">Ammonia-Free Hair Dyes</div>
+                <div class="item">Hair Dye from 200 to 300</div>
+                <div class="item">Root Dye 100</div>
+                <div class="item">Highlight Dye 350</div>
+                <div class="item">Lowlight 450</div>
+                <div class="item">Protein 490</div>
+                <div class="item">Collagen 690</div>
+                <div class="item">Keratin 490</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

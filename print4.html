@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .row{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+            .row{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Short bangs</li>
+                    <li>Henna for hand</li>
+                    <li>Henna for foot</li>
+                    <li>Waxing or sugaring full body</li>
+                    <li>Waxing or sugaring half body</li>
+                    <li>Waxing or sugaring back</li>
+                    <li>Waxing or sugaring bikini</li>
+                    <li>Full threading</li>
+                    <li>Facial bleaching</li>
+                    <li>Full lip</li>
+                    <li>Blow dry</li>
+                    <li>Roots dye</li>
+                    <li>Stylish cut</li>
+                    <li>Henna for hand</li>
+                    <li>Cream bath with steam</li>
+                    <li>Whitening body mask</li>
+                    <li>Hair wash</li>
+                    <li>Trim ends</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Package</li>
+                    <li>Makeup</li>
+                    <li>Hand nail polish</li>
+                    <li>Foot nail polish</li>
+                    <li>Nail extensions</li>
+                    <li>Hand paraffin</li>
+                    <li>Foot paraffin</li>
+                    <li>Waxing or sugaring half hand</li>
+                    <li>Waxing or sugaring half foot</li>
+                    <li>Waxing or sugaring hand</li>
+                    <li>Waxing or sugaring foot</li>
+                    <li>Waxing or sugaring stomach</li>
+                    <li>Facial wax</li>
+                    <li>Face threading</li>
+                    <li>Eyebrow threading</li>
+                    <li>Mustache injection</li>
+                    <li>Eyebrow bleaching</li>
+                    <li>Eyebrow dye</li>
+                    <li>Face mask</li>
+                    <li>Face scrub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

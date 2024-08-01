@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Offer Selection</h2>
+        <ul>
+            <li>5 services 150</li>
+            <li>10 services 200</li>
+            <li>15 services 250</li>
+            <li>25 services 350</li>
+        </ul>
+        <h2>Home Services</h2>
+        <ul>
+            <li>10 services 280</li>
+            <li>15 services 330</li>
+            <li>25 services 380</li>
+        </ul>
+        <p>Home services require advance booking and delivery fees are borne by the
+            customer</p>
+    </div>
+</body>
+
+</html>

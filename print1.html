@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: right;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>علاجات للشعر التالف</h2>
+        <ul>
+            <li>5 جلسات مجاناً + 1000 جلسات الفير</li>
+            <li>6 جلسات + 1250 جلسة مجاناً</li>
+            <li>5 جلسات كرياتين + جلسة بوتكس 1000 + 350 جلسة مجاناً</li>
+            <li>7 جلسات + 1000 جلسة مجاناً</li>
+            <li>6 جلسات بروتين + جلسة بوتكس 1500 + 500 جلسة مجاناً</li>
+            <li>بروتين و كيراتين + جلسة مجاناً 430</li>
+            <li>زيت الحشيش + زيت الأرجان + زيت النارجيل + زيت الخروع + زيت الزيتون</li>
+        </ul>
+    </div>
+</body>
+</html>

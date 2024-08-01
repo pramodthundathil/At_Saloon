@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: right;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-right: 1em;
+        }
+
+        li {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .row{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+        @media print {
+            body {
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                width: 60%;
+                margin: 0;
+                padding: 10;
+                box-shadow: none;
+                border-radius: 10px;
+                margin: auto;
+                background: linear-gradient(to bottom, #c9e6ff, #f8f8f8);
+                -webkit-print-color-adjust: exact;
+
+
+            }
+
+            h2 {
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+
+            ul {
+                padding-right: 1em;
+            }
+
+            li {
+                font-size: 1em;
+                color: #000;
+            }
+            .row{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>قصر الغره</li>
+                    <li>حنه كف يد</li>
+                    <li>حنه كف رجل</li>
+                    <li>واكس أو حلوه بدن كامل</li>
+                    <li>واكس أو حلوه ربعين كامل</li>
+                    <li>واكس أو حلوه ظهر</li>
+                    <li>واكس أو حلوه بكيني</li>
+                    <li>خيط كامل</li>
+                    <li>تشقير وجه</li>
+                    <li>فلب وفي</li>
+                    <li>سشوار</li>
+                    <li>صبغة جذور</li>
+                    <li>قص ستايل</li>
+                    <li>حنه اليد</li>
+                    <li>حمام كريم مع بخار</li>
+                    <li>ماسك مبيض للجسم</li>
+                    <li>غسيل شعر</li>
+                    <li>قص الاطراف</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>باكج</li>
+                    <li>ماكياج</li>
+                    <li>لون اظافر يد</li>
+                    <li>لون اظافر رجل</li>
+                    <li>تركيب اظافر</li>
+                    <li>براشين يد</li>
+                    <li>براشين رجل</li>
+                    <li>واكس أو حلوه نصف يد</li>
+                    <li>واكس أو حلوه نصف رجل</li>
+                    <li>واكس أو حلوه يد</li>
+                    <li>واكس أو حلوه رجل</li>
+                    <li>واكس أو حلوه بطن</li>
+                    <li>واكس وجه</li>
+                    <li>حفه وجه</li>
+                    <li>حفه حواجب</li>
+                    <li>حقن شنب</li>
+                    <li>تشقير حواجب</li>
+                    <li>صبغه حواجب</li>
+                    <li>ماسك الوجه</li>
+                    <li>سكراب الوجه</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
